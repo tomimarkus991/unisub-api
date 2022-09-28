@@ -13,7 +13,7 @@
     "gen-watch": "graphql-codegen --config codegen.yaml --watch",
     "test": "jest",
     "build": "tsc",
-    "migrate": "knex --cwd ./src migrate:make create_tables",
+    "migrate:init": "knex --cwd ./src migrate:make init",
     "migrate:latest": "knex --cwd ./src migrate:latest"
   },
   "dependencies": {
