@@ -7,7 +7,7 @@
     "start": "ts-node-dev -r tsconfig-paths/register src/main.ts",
     "lint:fix": "eslint --fix --ext .js,.ts,.tsx ./src --ignore-path .gitignore",
     "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|json|ts|tsx)\"",
-    "clean": "rm -rf node_modules/ && rm -rf yarn.lock && yarn && yarn start",
+    "clean": "rm -rf node_modules/ && rm -rf yarn.lock && yarn && yarn dev",
     "prepare": "cd .. && husky install server/.husky",
     "gen": "graphql-codegen --config codegen.yaml",
     "gen-watch": "graphql-codegen --config codegen.yaml --watch",
